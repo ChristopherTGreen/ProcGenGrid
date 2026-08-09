@@ -1,0 +1,3 @@
+﻿  ProcGenGrid.cpp
+E:\Users\ctgre\source\repos\ProcGenGrid\ProcGenGrid\ProcGenGrid.cpp(19,1): warning C4715: 'GetTileName': not all control paths return a value
+  ProcGenGrid.vcxproj -> E:\Users\ctgre\source\repos\ProcGenGrid\x64\Debug\ProcGenGrid.exe
