@@ -3,9 +3,10 @@
 #include <vector>
 #include <string>
 #include <unordered_map>
+#include "LogarithmicSpiralSetup.h"
 using namespace std;
 
-// Grid tile type definitions, the number following means the number of ways, C added is corner room
+/*// Grid tile type definitions, the number following means the number of ways, C added is corner room
 enum GridTileType {
 	Empty = 0,
 	Room1 = 1,
@@ -15,12 +16,8 @@ enum GridTileType {
 	Room4 = 5,
 	// Pray you don't need a 5 way - Chris note to self
 
-};
+};*/
 
 // Grid dimensions
 const int GRID_WIDTH = 50;
 const int GRID_HEIGHT = 50;
-
-// Function declarations 
-string GetTileName(int tileID); // might remove
-void PrintGrid(const vector<vector<int>>& grid);

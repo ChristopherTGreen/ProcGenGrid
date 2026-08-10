@@ -3,44 +3,23 @@
 
 #include <iostream>
 #include "ProcGenGrid.h"
+#include "LogarithmicSpiralSetup.h"
 using namespace std;
 
-string GetTileName(int tileID)
-{
-    switch (tileID) 
-    {
-        case 0: return "Empty";
-        case 1: return "Room1";
-        case 2: return "Room2";
-        case 3: return "Room2C";
-        case 4: return "Room3";
-        case 5: return "Room4";
-    }
-}
-
-void PrintGrid(const vector<vector<int>>& grid) 
-{
-    for (int y = 0; y < GRID_HEIGHT; y++) 
-    {
-        for (int x = 0; x < GRID_WIDTH; x++)
-        {
-            cout << grid[y][x] << " ";
-        }
-        cout << "\n\n";
-    }
-}
 
 
 
+int main() {
+    int totalStars = 100;
+    float distance = 2.0f;
+    float scaleFactor = 0.8f;
+    float windingFactor = 0.15f;
 
+    LogarithmicSpiralSetup LogSpiral;
+    LogSpiral.GenerateLogarithmicGrid(LogSpiral.GenerateIndexSpacedStarSpiral(totalStars, distance, scaleFactor, windingFactor));
+    
 
-int main()
-{
-    vector<vector<int>> grid(GRID_HEIGHT, vector<int>(GRID_WIDTH, 0));
-
-    // procedural logic here
-
-    PrintGrid(grid);
+    
     return 0;
 }
 
