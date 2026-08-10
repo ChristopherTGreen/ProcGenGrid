@@ -123,10 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LogarithmicSpiralSetup.cpp" />
     <ClCompile Include="ProcGenGrid.cpp" />
+    <ClCompile Include="StarNode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LogarithmicSpiralSetup.h" />
     <ClInclude Include="ProcGenGrid.h" />
+    <ClInclude Include="StarNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
